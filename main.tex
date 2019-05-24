@@ -1,0 +1,39 @@
+\usepackage{listingsutf8}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\usetheme{CambridgeUS}
+\title{Git a look under the hood}
+\subtitle{Build a deeper understanding of gits internals}
+\author{Vincent Scherb}
+\institute{IPI GmbH}
+\date{\today}
+\logo{\includegraphics[height=1cm]{images/ipi-logo.png}}
+
+% source: https://tex.stackexchange.com/questions/46953/unix-command-highlighting-latex/46994#46994
+\lstdefinestyle{BashInputStyle}{
+    language=bash,
+    basicstyle=\small\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=3pt,
+    frame=tb,
+    columns=fullflexible,
+    backgroundcolor=\color{yellow!20},
+    linewidth=0.9\linewidth,
+    xleftmargin=0.1\linewidth
+}
+
+\begin{document}
+    \frame{\titlepage}
+
+    \section*{Table of Contents}
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents
+    \end{frame}
+
+\end{document}
+
