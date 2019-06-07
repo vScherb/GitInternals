@@ -1,0 +1,45 @@
+\subsection{objects}
+\begin{frame}[fragile]
+    \frametitle{Exploring the objects directory}
+    \lstset{
+        language=bash,
+        showstringspaces=true,
+        frame=single,
+        style=BashInputStyle
+    }
+    \begin{lstlisting}[caption={git log --raw -n1}, label={fig:lograw}]
+commit c4e6fa75e04bc591a3a7b16bde5443f4cb10f626 (HEAD -> master)
+Author: [...]
+Date:   [...]
+
+    Git directory Root added
+
+:100644 100644 dbd87be aee74b1 M        README
+:000000 100644 0000000 1b16bf9 A        images/gitDirectory-Root.png
+:000000 100644 0000000 013543d A        slides/GitDirectoryRoot.tex
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{objects directory}
+    \lstset{
+        language=bash,
+        showstringspaces=true,
+        frame=single,
+        style=BashInputStyle
+    }
+    \begin{lstlisting}[caption={[Tree]tree .git/objects example (shortened with comments)},label={fig:objectsdirectory}]
+./.git/objects
+|-- 87
+|   |-- ccb1974b8bbcb39aa6c6bedc13a27bd4308142 tree
+|-- bc
+|   |-- cdfbd6314e19a21c367ba5ea9cbe65a1a0818e blob
+|-- d2
+|   |-- e82a9df8b4521fb6b25f22fb87ffe0e873413c staged blob
+|-- d8
+|   |-- c22f8205cab34e00e6a172febedd6d5f1a2ada commit
+|-- info
+|-- pack
+    \end{lstlisting}
+\end{frame}
+
