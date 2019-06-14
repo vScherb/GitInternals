@@ -1,0 +1,24 @@
+\subsection{Recap}
+\begin{frame}
+    \frametitle{Recap .git directory}
+    \begin{itemize}
+        \item All files of git are stored in the hidden directory
+        \item Commits, Trees and Blobs are referenced by their sha1\footnotemark
+        \footnotetext{
+            \href
+                {https://tools.ietf.org/html/rfc6234}
+                {RFC 6234}
+        }
+        \item Commits hold a reference to the tree of the root directory of the repository
+        \item The historie of commits is a directed acyclic graph\footnotemark
+        \footnotetext{
+            \href
+                {https://eagain.net/articles/git-for-computer-scientists}
+                {git for computer scientists}
+        }
+        \item Trees reference directories of the project
+        \item The root directory of the repository is always a tree object
+        \item Blobs are the file contents of that specific point in the history
+    \end{itemize}
+\end{frame}
+
