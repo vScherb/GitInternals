@@ -1,0 +1,66 @@
+\usepackage{listingsutf8}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{textpos}
+
+\input{./beamerSettings}
+
+% source: https://tex.stackexchange.com/questions/46953/unix-command-highlighting-latex/46994#46994
+\lstdefinestyle{BashInputStyle}{
+    language=bash,
+    basicstyle=\small\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=3pt,
+    frame=tb,
+    columns=fullflexible,
+    backgroundcolor=\color{yellow!20},
+    linewidth=0.9\linewidth,
+    xleftmargin=0.1\linewidth,
+    breaklines=true
+}
+
+\begin{document}
+    \frame{\titlepage}
+
+    \section*{Table of Contents}
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents
+    \end{frame}
+
+    \input{./slides/Intro}
+
+    \input{./slides/GitDirectoryRoot}
+
+    \input{./slides/GitDirectoryRefs}
+
+    \input{./slides/GitDirectoryRefs_Content}
+
+    \input{./slides/ContentsGitDirectory}
+
+    \input{./slides/objects}
+
+    \input{./slides/treish}
+
+    \input{./slides/directoryRecap}
+
+    \input{./slides/GitAreas}
+
+    \input{./slides/GitAreasRecap}
+
+    \input{./slides/email}
+
+    \input{./slides/emailRecap}
+
+    \input{./slides/CherryPicking}
+
+    \input{./slides/CherryPickingRecap}
+
+    \input{./slides/Slides}
+
+    \input{./slides/sources}
+\end{document}
+
